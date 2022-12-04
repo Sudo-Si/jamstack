@@ -7,8 +7,8 @@ function Navbar() {
     <div className=''>
        
     </div>
-         <div className="container mx-auto flex justify-between "> 
-            <nav className='flex ml-8'>
+         <div className="container mx-auto flex justify-between  "> 
+            <nav className='items-center flex ml-8 '>
                 <NavLink to="/" exact 
                 className="inline-flex items-center py-3 px-3 mr-4 hover:text-green-200 text-4xl font-bold cursive "
                  >Home</NavLink>

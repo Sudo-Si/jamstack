@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom";
 import  sanityClient  from "../client.js"
+import yarner from '../theyarn.png'
+// import Header from "./Header.js";
 function Post() {
 
  const [postData, setPost] = useState(null);
@@ -21,6 +23,25 @@ function Post() {
   }, [])
 console.log();
   return (
+      <div>
+
+
+   
+      {/* <Header /> */}
+     
+        <div className='flex justify-between items-center
+         bg-yellow-400 border-y border-black py-10 lg:py-0' >
+          <div className='px-10 space-y-5'>
+            <h1 className='text-6xl max-w-xl font-serif'>
+            <span className='underline decoration-black decoration-4 '>TheYarn</span> is the Place to write Read and Connect </h1>
+            <h2>We are an auckland based tech and art blog. access us from anywhere !</h2>
+         </div>
+         <img src={yarner} alt="" className='hidden md:inline-flex lg:h-full' style={{height:250}}  />
+        </div>
+
+
+
+
 
     <main className="bg-red-100 min-h-screen p-12">
       <section className="container mx-auto">
@@ -30,10 +51,6 @@ console.log();
       <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {
           postData && postData.map((post, index)=>(
-
-        
-          
-          
           <article>
           <Link to ={"/post/"+post.slug.current} key={post.slug.current}>
           <span className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400" 
@@ -62,6 +79,7 @@ console.log();
       </div>
       </section>
     </main>
+    </div>
   )
 }
 

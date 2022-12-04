@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"; //takes out sections of url 
+import { NavLink, useParams } from "react-router-dom"; //takes out sections of url 
 import React from 'react';
 import  sanityClient  from "../client.js"
 import imageUrlBuilder from  "@sanity/image-url"
@@ -35,14 +35,14 @@ export default function  SinglePost  () {
     if(!singlePost)return <div>Loading ...</div>;
     return (
         <main className="gb-gray-200 min-h-screen p-12">
-            <article className="container shaddow-lg mx-auto bg-green-100 rounded-lg">
+            <article className="container shaddow-lg mx-auto bg-gray-200 rounded-lg">
                 <header className="relative">
                     <div className="absolute h-ful w-full flex items-center justify-center p-8">
                           <div className="bg-white bg-opacity-75 rounded p-12">
-                        <h1 className="text-3xl lg:text-6xl mb-4">
+                        <h1 className="text-3xl lg:text-6xl mb-4 text-black">
                            Post Title: {singlePost.title} 
                             </h1>
-                        <div className="flex justify-center text-gray-800 ">
+                            <div className="flex justify-center text-gray-800 ">
                             <img 
                             src={urlFor(singlePost.authorImage).url()} 
                             alt= {singlePost.name}
@@ -63,6 +63,7 @@ export default function  SinglePost  () {
                     dataset="production"/>
                     </div>
             </article>
+            <NavLink to ={"/post"}> Back to posts</NavLink>
         </main>
     );
 }
