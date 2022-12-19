@@ -1,23 +1,8 @@
-client.js 
-install sanity client pacakge 
-npm i @sanity/client
- import sanityClient from "@sanity/client"
+Home Page 
+![image](https://user-images.githubusercontent.com/56238070/207739266-c61a66c7-3927-43cd-85a3-81f168224cc5.png)
 
- export deafult sanityClient ({
-    projectId:""
- })
+post slug 
+![image](https://user-images.githubusercontent.com/56238070/207739374-2681b27a-8f72-4e45-a21f-cf81454eb9c4.png)
 
-/fullportfolio : cd studio
-npm start
-sanity docs
- https://www.sanity.io/manage/personal/project/cxt3fpa8/api
+Just having some deployment issues at the moment 
 
- tailwindcss docs
-
- import router dom
- 
-
- yt: https://www.youtube.com/watch?v=NO7_jgzVgbc&t=318s 
- 1h5m20s
-
- https://whatstheyarn-a4efb.web.app/
