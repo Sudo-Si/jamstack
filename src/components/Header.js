@@ -7,7 +7,7 @@ function Header() {
 
     <header className=" flex justify-between p-5 max-w-7xl">
       <div className="flex items-center space-x-5">
-        <NavLink href='/' >
+        <NavLink to='/' >
          <img className="w-20 object-contain cursor-pointer"
          src={img} alt="s" />
         </NavLink> 
@@ -19,8 +19,8 @@ function Header() {
       </div>
       </div>
      
-      <div className='inline-flex '> 
-                <SocialIcon url='https://github.com' className='mr-4' target="_blank" fgColor='#fff'style={{height:35, width:35}} />
+      <div className='inline-flex  flex justify-center my-auto '> 
+                <SocialIcon url='https://github.com/Sudo-Si' className='mr-4' target="_blank" fgColor='#fff'style={{height:35, width:35}} />
                 <SocialIcon url='https://www.linkedin.com/' className='mr-4' target="_blank" fgColor='#fff'style={{height:35, width:35}} />
                 <SocialIcon url='https://www.instagram.com/' className='mr-4' target="_blank" fgColor='#fff'style={{height:35, width:35}} />
             </div>

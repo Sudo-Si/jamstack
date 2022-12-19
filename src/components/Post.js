@@ -2,7 +2,6 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom";
 import  sanityClient  from "../client.js"
 import yarner from '../theyarn.png'
-// import Header from "./Header.js";
 function Post() {
 
  const [postData, setPost] = useState(null);
@@ -34,7 +33,7 @@ console.log();
           <div className='px-10 space-y-5'>
             <h1 className='text-6xl max-w-xl font-serif'>
             <span className='underline decoration-black decoration-4 '>TheYarn</span> is the Place to write Read and Connect </h1>
-            <h2>We are an auckland based tech and art blog. access us from anywhere !</h2>
+            <p>We are an auckland based tech and art blog. Access us from anywhere !</p>
          </div>
          <img src={yarner} alt="" className='hidden md:inline-flex lg:h-full' style={{height:250}}  />
         </div>
