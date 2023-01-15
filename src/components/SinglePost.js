@@ -38,11 +38,25 @@ export default function  SinglePost  () {
             <article className="container shadow-lg mx-auto bg-gray-200 rounded-lg">
                 <header className="relative">
                     <div className="absolute h-ful w-full flex items-center justify-center p-8">
-                          <div className="bg-white bg-opacity-75 rounded p-12">
-                        <h1 className="text-3xl lg:text-6xl mb-4 text-black">
+                        
+                    </div>
+                  <img
+                  src={singlePost.mainImage.asset.url}
+                  alt={singlePost.title} className='w-full object-contain rounded-t'
+                  style={{height:'100vh'}}
+                  />
+                </header>  
+                <div className="bg-white bg-opacity-20 rounded p-0 my-4 mx-4">
+                        <h1 className="text-3xl lg:text-3xl mb-4 text-black">
                            Post Title: {singlePost.title} 
                             </h1>
-                            <div className="flex justify-center text-gray-800 ">
+                          
+                    </div>
+                <div className=" px-3 lg:px-3 py-3 lg:py-1 prose lg:prose-xl max-w-full">
+                    <BlockContent blocks={singlePost.body} projectId="cxt3fpa8"
+                    dataset="production" className={"checker bg-blue"}/>
+                    </div>
+                    <div className="flex justify-left text-gray-800 ">
                             <img 
                             src={urlFor(singlePost.authorImage).url()} 
                             alt= {singlePost.name}
@@ -50,20 +64,9 @@ export default function  SinglePost  () {
                             <p className="flex items-center pl-2 text-2xl"> posted by {singlePost.name}
                             </p>
                             </div>
-                    </div>
-                    </div>
-                  <img
-                  src={singlePost.mainImage.asset.url}
-                  alt={singlePost.title} className='w-full object-cover rounded-t'
-                  style={{height:'400px'}}
-                  />
-                </header>
-                <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
-                    <BlockContent blocks={singlePost.body} projectId="cxt3fpa8"
-                    dataset="production"/>
-                    </div>
             </article>
-            <NavLink to ={"/post"}> Back to posts</NavLink>
+
+            <NavLink className={"mx-4"} to ={"/post"}> Back to posts</NavLink>
         </main>
     );
 }

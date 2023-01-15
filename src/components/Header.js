@@ -1,31 +1,19 @@
-import { NavLink } from "react-router-dom";
-import { SocialIcon } from 'react-social-icons'
-import img from '../theyarn.png'
-
+import React from 'react'
+import yarner from '../theyarn.png'
 function Header() {
   return (
-
-    <header className=" flex justify-between p-5 max-w-7xl">
-      <div className="flex items-center space-x-5">
-        <NavLink to='/' >
-         <img className="w-20 object-contain cursor-pointer"
-         src={img} alt="s" />
-        </NavLink> 
-        
-        <NavLink to="/post" className="inline-flex items-center py-3 px-3 mr-4 hover:text-green-200 text-1xl">Blog </NavLink>
-             
-         <div className="hidden md:inline-flex item-center space-x-5">
-      
-      </div>
-      </div>
-     
-      <div className='inline-flex  flex justify-center my-auto '> 
-                <SocialIcon url='https://github.com/Sudo-Si' className='mr-4' target="_blank" fgColor='#fff'style={{height:35, width:35}} />
-                <SocialIcon url='https://www.linkedin.com/' className='mr-4' target="_blank" fgColor='#fff'style={{height:35, width:35}} />
-                <SocialIcon url='https://www.instagram.com/' className='mr-4' target="_blank" fgColor='#fff'style={{height:35, width:35}} />
-            </div>
-    </header>
+    <div>
+    <div className='flex justify-between items-center
+     bg-yellow-400 border-y border-black py-10 lg:py-0' >
+      <div className='px-10 space-y-5'>
+        <h1 className='text-6xl max-w-xl font-serif'>
+        <span className='underline decoration-black decoration-4 '>theYarn</span> is a blog based in the beautiful Aotearoa!</h1>
+        <p>The #1 Simon Maswabi Blog on the internet!</p>
+     </div>
+     <img src={yarner} alt="" className='hidden md:inline-flex lg:h-full' style={{height:250}}  />
+    </div>
+    </div>
   )
 }
 
-export default Header;
+export default Header
