@@ -43,7 +43,7 @@ export default function  SinglePost  () {
                   <img
                   src={singlePost.mainImage.asset.url}
                   alt={singlePost.title} className='w-full object-contain rounded-t'
-                  style={{height:'100vh'}}
+                  style={{height:'auto'}}
                   />
                 </header>  
                 <div className="bg-white bg-opacity-20 rounded p-0 my-4 mx-4">
