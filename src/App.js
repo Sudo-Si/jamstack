@@ -7,7 +7,7 @@ import Project from './components/Project'
 import Post from './components/Post'
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-// import Navbar from "./components/Navbar";
+// import Header from "./components/Header";
 
 function App() {
   return (
