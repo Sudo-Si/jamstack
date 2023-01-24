@@ -5,8 +5,8 @@ import img from '../theyarn.png'
 function Header() {
   return (
 
-    <header className=" flex justify-between p-5 max-w-7xl">
-      <div className="flex items-center space-x-5">
+    <header className=" flex justify-between p-5 blu  ">
+      <div className="flex items-center space-x-5 ">
         <NavLink to='/' >
          <img className="w-20 object-contain cursor-pointer"
          src={img} alt="s" />

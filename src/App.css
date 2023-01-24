@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.blu{
+  background-color: #61dafb;
+}
+.baq{
+  background-color: #fcde67;
+}
+.pbaq{
+  background-color: rgba(252, 222, 103, 0);
+}
+.bdr{
+  border: solid red;
+}
+.ftr{
+  background-color: #030e12;
+}
