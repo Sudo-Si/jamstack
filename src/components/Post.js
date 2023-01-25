@@ -31,7 +31,7 @@ console.log();
 
     <main className="bg-red-100 min-h-screen p-12 baq">
       <section className="container mx-auto">
-      <h1 className="text-5xl flex justify-center ">Blog Post Page</h1>
+      <h1 className="text-5xl flex justify-center ">Blog Posts </h1>
       <h2 className="text-lg text-gray-600 flex justify-center py-5">All Posts:</h2>
       <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {

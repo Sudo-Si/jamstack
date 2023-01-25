@@ -12,7 +12,7 @@ function Header() {
          src={img} alt="s" />
         </NavLink> 
         
-        <NavLink to="/post" className="inline-flex items-center py-3 px-3 mr-4 hover:text-green-200 text-1xl">Blog </NavLink>
+        <NavLink to="/post" className="inline-flex items-center py-3 px-3 mr-4 hover:text-yellow-200 text-3xl">Blog </NavLink>
              
          <div className="hidden md:inline-flex item-center space-x-5">
       
